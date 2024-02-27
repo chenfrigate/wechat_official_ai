@@ -51,7 +51,7 @@ class Handle(object):
                       return "success"
                 else:
                    Handle.cache[recMsg.MsgId] = ""
-                   content = Handle.chat.chat(recMsg.Content)
+                   content = Handle.chat.chat("200字内回答。"+recMsg.Content)
                    Handle.cache[recMsg.MsgId] = content
                    replyMsg = reply.TextMsg(toUser, fromUser, content)
                    time.sleep(5)
