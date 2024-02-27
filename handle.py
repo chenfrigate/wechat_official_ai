@@ -22,7 +22,7 @@ class Handle(object):
 
 
     chat = sparkWeb.create_continuous_chat()
-    cache = ExpiringDict(max_len=100, max_age_seconds=30)
+    cache = ExpiringDict(max_len=30, max_age_seconds=30)
 
     def GET(self):
         try:
