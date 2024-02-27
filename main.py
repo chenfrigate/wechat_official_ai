@@ -2,7 +2,7 @@ import web
 from handle import Handle
 
 urls = (
-    '/wx', 'Handle',
+    '/weixin', 'Handle',
 )
 
 if __name__ == '__main__':
